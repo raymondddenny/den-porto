@@ -11,7 +11,7 @@ import MeLogo from "./MeLogo";
 export default function IntroMe() {
   return (
     <>
-      <div className="text-center p-10 py-10">
+      <div className="text-center p-10 py-4">
         <h2 className="text-4xl text-orange-400 font-medium md:text-6xl">
           Denny Raymond
         </h2>

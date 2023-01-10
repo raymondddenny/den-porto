@@ -8,8 +8,8 @@ interface Props {
 // TODO: add darkmode
 export default function Navbar({ Props }: { Props: { darkMode: boolean } }) {
   return (
-    <nav className="py-10 mb-12 flex justify-between">
-      <h1 className="text-xl font-overpass">Hi There.</h1>
+    <nav className="py-8 mb-12 flex justify-between md:max-w-md mx-auto md:items-end">
+      <h1 className="text-xl font-overpass md:text-3xl">Hi There.</h1>
       <ul className="flex items-center space-x-5">
         <li>
           <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
