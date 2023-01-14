@@ -5,7 +5,10 @@ export default function Footer() {
   return (
     <footer className="py-4">
       <p className="flex items-center justify-center md:text-2xl dark:text-[#EBE6E6]">
-        Made with <FaHeart className="text-red-500 ml-2" />
+        Made with <FaHeart className="text-red-500 ml-2 mr-2" />
+      </p>
+      <p className="flex items-center justify-center md:text-xl dark:text-[#EBE6E6]">
+        ⓒ 2023
       </p>
     </footer>
   );
