@@ -3,16 +3,22 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 
 interface Props {
   darkMode: boolean;
+  toggleDarkMode: () => void;
 }
 
 // TODO: add darkmode
-export default function Navbar({ Props }: { Props: { darkMode: boolean } }) {
+export default function Navbar(props: Props) {
   return (
     <nav className="py-8 mb-12 flex justify-between md:max-w-md mx-auto md:items-end">
-      <h1 className="text-xl font-overpass md:text-3xl">Hi There.</h1>
+      <h1 className="text-xl font-overpass dark:text-[#EBE6E6] md:text-3xl">
+        Hi There.
+      </h1>
       <ul className="flex items-center space-x-5">
         <li>
-          <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
+          <BsFillMoonStarsFill
+            className="cursor-pointer text-2xl dark:text-[#EBE6E6]"
+            onClick={props.toggleDarkMode}
+          />
         </li>
         <li>
           <a

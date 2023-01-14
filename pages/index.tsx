@@ -14,9 +14,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-white px-10  md:px-20 lg:40">
+      <main className="dark:bg-[#141010] bg-[#EBE6E6] px-10  md:px-20 lg:40 ">
         <section className="min-h-screen ">
-          <Navbar Props={{ darkMode }} />
+          <Navbar
+            darkMode={darkMode}
+            toggleDarkMode={() => setDarkMode(!darkMode)}
+          />
+
           <IntroMe />
         </section>
         <Footer />
